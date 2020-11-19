@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>  
+  <link rel="stylesheet" href="style.css">
+    <title>Projeto integrador</title>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Assistência</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quem Somos </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Conta <span class="sr-only">(Página atual)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <div class="container-fluid">
+        <div class="row">     
+      <div class="col-10 offset-1 bg-white shadow mb-5 border border-primary">
+        <div class="row">
+            <div  id="loginLogo" class= "col-6 p-4  d-flex justify-content-center">
+                <img src="./perfil.jpg" height="320px" alt="Logo Firebase"/>
+            </div>
+            <div class="col-6 p-5">
+                <div id="loginForm">
+                    <h2 class="h2 text-center text-dark mb-3">
+                        Acesso
+                    </h2>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input 
+                        type="password" 
+                        name="password" 
+                        id="password" 
+                        class="form-control"/>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      onclick="login()"
+                    >Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            
+
+
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+
+    <script src="./init.js"></script>
+    <script src="./auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.form{
+  width: 400px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+#centro{
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 70px
+  
+}
