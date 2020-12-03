@@ -3,9 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>  
+  <link rel="stylesheet" href="style.css">
+  <title>Perfil</title>
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Assistência</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quem Somos </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Conta <span class="sr-only">(Página atual)</span></a>
+        </li>
+        <li>
+          <a href="#" onclick="logout()"class="list-group-item list-group-item-action bg-light">Sair</a>
+        </li>
+     
+      </ul>
+    </div>
+  </nav>
+  <br>
+
   
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title mt-4">Meu perfil</h1>
+        <form>
+          <div class="form-group">
+            <label for="inputFirstName">Nome</label>
+            <input id="inputFirstName" type="text" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="inputLastName">Sobrenome</label>
+            <input id="inputLastName" type="text" class="form-control" />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="saveProfile()"
+          >
+            Salvar perfil
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title mt-4">Lista de Desejos</h1>
+
+      <div class="form-group">
+        <input id="inputLastName" type="text" class="form-control" />
+      </div>
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="saveProfile()"
+      >
+        Adicionar Celular
+      </button>
+
+
 </body>
 </html>
